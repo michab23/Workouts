@@ -1,0 +1,25 @@
+<p *ngIf="!(joggingData$ | async)"><em>Loading...</em></p>
+<p>
+<table class="table table-sm table-hover">
+<thead>
+    <tr>
+        <th>Date</th>
+        <th>Distance in meters</th>
+        <th>Time</th>
+        <th>Average speed</th>
+        <th>Commands</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let joggingInfo of joggingData"> 
+        <td>{{ joggingInfo.date | date:'shortDate' }}</td>
+        <td>{{ joggingInfo.distanceInMeters | number: '1.2-2' }}</td>
+        <td>{{ joggingInfo.timeInSeconds / 60 | number: '1.0-0' }}:{{ joggingInfo.timeInSeconds % 60 |number: '2.0-0' }}</td>
+        <td>{{ (joggingInfo.distanceInMeters / joggingInfo.timeInSeconds) * 3.6 | number:'1.2-2' }}</td>
+        <td>
+            <a href="#" (click)="editRecord(this)">Edit</a>
+            <a href="#" (click)="deleteRecord(this)">Delete</a>
+        </td>
+    </tr>
+</tbody>
+</table>
