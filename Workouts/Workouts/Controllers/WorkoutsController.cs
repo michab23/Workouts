@@ -23,11 +23,15 @@ namespace Workouts.Controllers
 
         // GET: api/Workouts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Workout>>> GetWorkout()
+        public async Task<ActionResult<IEnumerable<Workout>>> GetWorkout([FromQuery] WorkoutParameters workoutParameters)
         {
-            return await _context.Workout.ToListAsync();
+            return await _context.Workout
+                    //.OrderBy(on => on.Date)
+                    //.Skip((workoutParameters.PageNumber - 1) * workoutParameters.PageSize)
+                    //.Take(workoutParameters.PageSize)
+                    .ToListAsync();
         }
-
+        
         // GET: api/Workouts/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Workout>> GetWorkout(int id)

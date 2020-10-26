@@ -157,6 +157,9 @@ C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Microsof
 C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
 C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
 C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\student\source\repos\Workouts\Workouts\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\student\source\repos\Workouts\Workouts\obj\Debug\netcoreapp3.1\Workouts.csproj.CoreCompileInputs.cache
 C:\Users\student\source\repos\Workouts\Workouts\obj\Debug\netcoreapp3.1\Workouts.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\student\source\repos\Workouts\Workouts\obj\Debug\netcoreapp3.1\Workouts.MvcApplicationPartsAssemblyInfo.cache
