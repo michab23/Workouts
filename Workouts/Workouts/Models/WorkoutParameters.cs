@@ -25,5 +25,7 @@ namespace Workouts.Models
         public DateTime fromDate { get; set; }
 
         public DateTime toDate { get; set; }
+
+        public string runnerName { get; set; }
     }
 }

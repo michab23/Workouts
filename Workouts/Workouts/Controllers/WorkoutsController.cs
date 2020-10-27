@@ -31,7 +31,39 @@ namespace Workouts.Controllers
                     //.Take(workoutParameters.PageSize)
                     .ToListAsync();
         }
-        
+
+        // GET: api/workouts/paging?pageNumber=2&pageSize=2
+        [HttpGet("Paging")]
+        public async Task<ActionResult<IEnumerable<Workout>>> PagingWorkout([FromQuery] WorkoutParameters workoutParameters)
+        {
+            return await _context.Workout
+                     .OrderBy(on => on.Date)
+                     .Skip((workoutParameters.PageNumber - 1) * workoutParameters.PageSize)
+                     .Take(workoutParameters.PageSize)
+                     .ToListAsync();
+        }
+
+        // GET: api/workouts/search_date_range?fromDate=01/01/2019&toDate=01/01/2020
+        [HttpGet("search_date_range")]
+        public async Task<ActionResult<IEnumerable<Workout>>> SearchWorkoutDateRange([FromQuery] WorkoutParameters workoutParameters)
+        {
+            return await _context.Workout
+                    .OrderBy(on => on.Date)
+                    .Where(on => on.Date >= workoutParameters.fromDate &&
+                                on.Date <= workoutParameters.toDate)
+                    .ToListAsync();
+        }
+
+        // GET: api/Workouts/search_by_name?runnerName=מוטי
+        [HttpGet("search_by_name")]
+        public async Task<ActionResult<IEnumerable<Workout>>> SearchWorkoutRunnerName([FromQuery] WorkoutParameters workoutParameters)
+        {
+            return await _context.Workout
+                    .OrderBy(on => on.Date)
+                    .Where(on => on.RunnerName.ToLower().Contains(workoutParameters.runnerName.Trim().ToLower()))
+                    .ToListAsync();
+        }
+
         // GET: api/Workouts/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Workout>> GetWorkout(int id)
@@ -110,5 +142,7 @@ namespace Workouts.Controllers
         {
             return _context.Workout.Any(e => e.Id == id);
         }
+
+        
     }
 }
