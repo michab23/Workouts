@@ -14,5 +14,9 @@ namespace Workouts.Models
         public int DistanceInMeters { get; set; }
 
         public long TimeInSeconds { get; set; }
+
+        public string RunnerName { get; set; }
+
+        public string CityName { get; set; }
     }
 }

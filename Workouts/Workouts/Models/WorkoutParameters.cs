@@ -21,5 +21,9 @@ namespace Workouts.Models
                 _pageSize = (value > maxPageSize) ? maxPageSize : value;
             }
         }
+
+        public DateTime fromDate { get; set; }
+
+        public DateTime toDate { get; set; }
     }
 }

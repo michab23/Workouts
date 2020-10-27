@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y3ZejMWFfieG2Jg312oOj8gU/+BFGZ8a/zQTPoYXI1z9Jdy+LCgwR59Zj/3YEH0t4yK4cqoXdmCeyRUVK7rDhA==",
+  "dgSpecHash": "gPl0zdY1nyRdjw+nWRD1lrlb0EBwjFdI/xas1iHDboPQNiAfg8CE8SqAO+38p2BW0uz5AZsGC7q8n4OH+Rurjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\student\\source\\repos\\Workouts\\Workouts\\Workouts.csproj",
+  "projectFilePath": "C:\\Users\\student\\source\\backend_new\\Workouts\\Workouts\\Workouts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\student\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\student\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.9\\microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",

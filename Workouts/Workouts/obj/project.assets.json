@@ -9129,11 +9129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\source\\repos\\Workouts\\Workouts\\Workouts.csproj",
+      "projectUniqueName": "C:\\Users\\student\\source\\backend_new\\Workouts\\Workouts\\Workouts.csproj",
       "projectName": "Workouts",
-      "projectPath": "C:\\Users\\student\\source\\repos\\Workouts\\Workouts\\Workouts.csproj",
+      "projectPath": "C:\\Users\\student\\source\\backend_new\\Workouts\\Workouts\\Workouts.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\source\\repos\\Workouts\\Workouts\\obj\\",
+      "outputPath": "C:\\Users\\student\\source\\backend_new\\Workouts\\Workouts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
