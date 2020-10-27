@@ -54,4 +54,8 @@ export class GridJoggingComponent implements OnInit, AfterViewInit {
   public doFilter = (value: string) => {
     this.dataSource.filter = value.trim().toLocaleLowerCase();
   }
+  public doDateFilter = (value: Date) => {
+    let filterValue =  value.toLocaleDateString().trim().toLocaleLowerCase();
+    this.dataSource.filter = filterValue;
+  }
 }

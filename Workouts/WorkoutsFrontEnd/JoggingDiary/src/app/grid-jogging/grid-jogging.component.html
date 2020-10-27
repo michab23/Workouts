@@ -3,6 +3,7 @@
   <mat-form-field fxFlex="40%">
     <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
   </mat-form-field>
+
   <div>
     <a [routerLink]="['/create']" mat-button color="primary">Create Workout</a>
   </div>
@@ -53,5 +54,5 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
-  <mat-paginator [pageSize]="2" [pageSizeOptions]="[2, 4, 6, 10, 20]">
+  <mat-paginator [pageSize]="6" [pageSizeOptions]="[2, 4, 6, 10, 20]">
   </mat-paginator>
