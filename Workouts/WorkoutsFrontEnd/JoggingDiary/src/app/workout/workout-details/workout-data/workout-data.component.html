@@ -1,0 +1,28 @@
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card fxFlex="500px" fxFlex.xs="100%">
+        <mat-card-title>Details for the clicked workout</mat-card-title>
+        <mat-card-content>
+          <div fxLayout="column wrap" fxLayoutGap="40px">
+            <div fxLayout="row wrap" fxFlex>
+              <div fxFlex><strong>Distance:</strong></div>
+              <div fxFlex>{{workout?.distanceInMeters}}</div>
+            </div>
+            <div fxLayout="row wrap" fxFlex>
+              <div fxFlex><strong>Time:</strong></div>
+              <div fxFlex>{{workout?.timeInSeconds}}</div>
+            </div>
+            <div fxLayout="row wrap" fxFlex>
+              <div fxFlex><strong>Date of workout:</strong></div>
+              <div fxFlex>{{workout?.date | date}}</div>
+            </div>
+      
+            
+          </div>
+        </mat-card-content>
+        <mat-card-actions align="center">
+          
+          <button type="button" mat-raised-button color="primary" (click)="onCancel()">Back</button>
+        </mat-card-actions>
+      </mat-card>
+      
+</section>

@@ -5,6 +5,7 @@ import { Workout } from '../_interface/workout.model';
 import { MatSort } from '@angular/material/sort';
 import { ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-grid-jogging',
@@ -23,7 +24,7 @@ export class GridJoggingComponent implements OnInit, AfterViewInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  constructor(private workoutService: WorkoutService) { }
+  constructor(private workoutService: WorkoutService, private router: Router) { }
 
   ngOnInit() {
     this.getAllworkouts();
@@ -42,8 +43,10 @@ export class GridJoggingComponent implements OnInit, AfterViewInit {
   }
 
   public redirectToDetails = (id: string) => {
-    
+    let url: string = `/details/${id}`;
+    this.router.navigate([url]);
   }
+  
   public redirectToUpdate = (id: string) => {
     
   }
@@ -58,4 +61,6 @@ export class GridJoggingComponent implements OnInit, AfterViewInit {
     let filterValue =  value.toLocaleDateString().trim().toLocaleLowerCase();
     this.dataSource.filter = filterValue;
   }
+
+
 }

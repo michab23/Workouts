@@ -12,16 +12,16 @@
                     <mat-datepicker #picker></mat-datepicker>
                   </mat-form-field>
                   <mat-form-field>
-                    <input matInput type="text" placeholder="Owner's name" formControlName="distanceInMeters" id="distanceInMeters">
-                    <mat-hint align="end">Not more then 60 characters long.</mat-hint>
-                    <mat-error *ngIf="hasError('distanceInMeters', 'required')">Name is required</mat-error>
-                    <mat-error *ngIf="hasError('distanceInMeters', 'maxlength')">You have more than 60 characters</mat-error>
+                    <input matInput type="text" placeholder="Distance" formControlName="distanceInMeters" id="distanceInMeters">
+                    <mat-hint align="end">Not more then 10 digits long.</mat-hint>
+                    <mat-error *ngIf="hasError('distanceInMeters', 'required')">Distance is required</mat-error>
+                    <mat-error *ngIf="hasError('distanceInMeters', 'maxlength')">You have more than 10 difgits</mat-error>
                   </mat-form-field>
                   <mat-form-field>
-                    <input matInput type="text" placeholder="Owner's address" formControlName="timeInSeconds">
-                    <mat-hint align="end">Not more then 100 characters long.</mat-hint>
-                    <mat-error *ngIf="hasError('timeInSeconds', 'required')">Address is required</mat-error>
-                    <mat-error *ngIf="hasError('timeInSeconds', 'maxlength')">You have more than 100 characters</mat-error>
+                    <input matInput type="text" placeholder="Time" formControlName="timeInSeconds">
+                    <mat-hint align="end">Not more then 10 digits long.</mat-hint>
+                    <mat-error *ngIf="hasError('timeInSeconds', 'required')">Time is required</mat-error>
+                    <mat-error *ngIf="hasError('timeInSeconds', 'maxlength')">You have more than 10 digits</mat-error>
                   </mat-form-field>
             </mat-card-content>
             <mat-card-actions align="center">

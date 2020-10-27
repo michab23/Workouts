@@ -15,6 +15,11 @@ export class WorkoutService {
     return this.http.get(this.accessPointUrl, {headers: this.headers});
   }
 
+  public get_workout(payload) {
+    // Get all jogging data
+    return this.http.get(this.accessPointUrl+"/"+payload,  {headers: this.headers});
+  }
+
   public add(payload) {
     return this.http.post(this.accessPointUrl, payload, {headers: this.headers});
   }

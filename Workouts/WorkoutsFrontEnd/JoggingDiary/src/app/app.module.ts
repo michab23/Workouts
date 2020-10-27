@@ -23,13 +23,19 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
+import { WorkoutDetailsComponent } from './workout/workout-details/workout-details.component';
+import { WorkoutDataComponent } from './workout/workout-details/workout-data/workout-data.component';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GridJoggingComponent,
-    WorkoutCreateComponent
+    WorkoutCreateComponent,
+    WorkoutDetailsComponent,
+    WorkoutDataComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,8 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   providers: [
     WorkoutService

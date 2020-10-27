@@ -18,8 +18,8 @@ export class WorkoutCreateComponent implements OnInit {
   ngOnInit() {
     this.workoutForm = new FormGroup({
       workoutDate: new FormControl(new Date()),
-      distanceInMeters: new FormControl('', [Validators.required, Validators.maxLength(60)]),
-      timeInSeconds: new FormControl('', [Validators.required, Validators.maxLength(100)])
+      distanceInMeters: new FormControl('', [Validators.required, Validators.maxLength(10)]),
+      timeInSeconds: new FormControl('', [Validators.required, Validators.maxLength(10)])
     });
   }
 
